@@ -6,6 +6,8 @@ const mkdir = require('mkdirp');
 const nut = cli.arguments('<nut>');
 const fs = require('fs');
 const path = require('path');
+const concat = require('concat');
+const glob = require("glob");
 nut
   .command('install [comp]')
   .action((comp) => {
@@ -14,10 +16,39 @@ nut
   )
 ;
 
-nut
-  .command('generate [type] [file]')
-  .action((type) => {
+const appicon = (file) => {
+  'use strict';
+};
 
+const Fontmin = require('fontmin');
+const webfont = (src, dest) => {
+  'use strict';
+
+  dest = ('app/prod/resource/font/' + dest).replace(/\/\//g, '/');
+
+  let fontmin = new Fontmin()
+    .src(src)
+    .dest(dest);
+
+  fontmin.run(function (err, files) {
+    if (err) throw err;
+    glob(dest + '/*.css', null, (err, arr) => {
+      if (err) throw err;
+      concat(arr, dest + '/base.css');
+    });
+
+    console.log('generate webfont : ' + dest);
+  });
+};
+
+nut
+  .command('generate [type] [file] [dest]')
+  .action((type, file, dest) => {
+      if (type === 'webfont') {
+        webfont(file, dest);
+      } else if (type === 'appicon') {
+        appicon(file, dest);
+      }
     }
   )
 ;
@@ -75,7 +106,7 @@ nut
               content = content.replace(/{{comp}}/g, comp);
               let location = directory + file;
               fs.writeFile(location, content, 'utf-8', () => {
-                console.log('create file : ' + location);
+                console.log('create nut : ' + location);
               });
             });
           })
