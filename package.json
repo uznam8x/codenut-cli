@@ -1,6 +1,6 @@
 {
   "name": "codenut-cli",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "codenut cli",
   "main": "index.js",
   "bin": {
@@ -18,10 +18,12 @@
     "fs": "0.0.1-security",
     "glob": "^7.1.2",
     "gm": "^1.23.0",
+    "md5": "^2.2.1",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
     "progress": "^2.0.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "scripts": {
