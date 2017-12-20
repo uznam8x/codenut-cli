@@ -1,6 +1,6 @@
 {
   "name": "codenut-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "codenut cli",
   "main": "index.js",
   "bin": {
@@ -9,15 +9,19 @@
   "dependencies": {
     "async": "^2.6.0",
     "chalk": "^2.3.0",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
     "commander": "^2.12.2",
     "concat": "^1.0.3",
+    "extract-zip": "^1.6.6",
     "fontmin": "^0.9.6",
     "fs": "0.0.1-security",
     "glob": "^7.1.2",
     "gm": "^1.23.0",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
-    "progress": "^2.0.0"
+    "progress": "^2.0.0",
+    "request": "^2.83.0"
   },
   "devDependencies": {},
   "scripts": {
