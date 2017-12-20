@@ -1,6 +1,6 @@
 {
   "name": "codenut-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "codenut cli",
   "main": "index.js",
   "bin": {
@@ -33,7 +33,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "CC BY-NC-SA 4.0",
   "bugs": {
     "url": "https://github.com/uznam8x/codenut-cli/issues"
   },

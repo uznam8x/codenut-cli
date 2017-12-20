@@ -8,6 +8,7 @@ npm install -g codenut-cli
 
 ### Usage
 ```
+nut install <asset>
 nut create <component>
 nut page <path>
 nut generate webfont <font-path> <dest>
@@ -25,6 +26,7 @@ nut generate appicon <img-path>
 
 ### Example
 ```
+nut install toggle
 nut create textfield
 nut page component/contact-us
 nut generate webfont 'font/heveltica.ttf' 'heveltica'
