@@ -1,6 +1,6 @@
 {
   "name": "codenut-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "codenut cli",
   "main": "index.js",
   "bin": {
@@ -23,6 +23,7 @@
     "path": "^0.12.7",
     "progress": "^2.0.0",
     "request": "^2.83.0",
+    "rmdir": "^1.2.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {},
@@ -33,7 +34,13 @@
     "type": "git",
     "url": "git+https://github.com/uznam8x/codenut-cli.git"
   },
-  "keywords": [],
+  "keywords": [
+    "codenut",
+    "codenut-cli",
+    "html framework",
+    "prisf",
+    "uznam8x"
+  ],
   "author": "",
   "license": "GPLv2",
   "bugs": {
