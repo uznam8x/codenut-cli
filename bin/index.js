@@ -4,9 +4,10 @@ const chalk = require('chalk');
 const Progress = require('progress');
 const nut = cli.arguments('<nut>');
 
-require('../lib/command/install');
+//require('../lib/command/install');
 require('../lib/command/generator');
 require('../lib/command/create');
+require('../lib/command/new');
 
 // # LAYOUT
 nut

@@ -1,10 +1,16 @@
 const fs = require('fs');
-const Vue = require('vue');
 const path = require('path');
+const _ = require('lodash');
 
-Vue.component('{{comp}}', {
+module.exports = {
+  '{{comp}}': {
     props: {},
-    template: fs.readFileSync(path.resolve(__dirname, './template.html'), 'utf-8'),
+    beforeCreate: (config) => {
+      return config;
+    },
+    created: (rendered) => {
+      return rendered;
+    },
+    template: path.resolve(__dirname, './template.html'),
   }
-);
-module.exports = this;
+};

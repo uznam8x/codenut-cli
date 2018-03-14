@@ -1,8 +1,8 @@
-(($, nut) => {
-  'use strict';
+((nut) => {
+  nut.component('popover', (node) => {
+    _.each(node, (el) => {
 
-  if (nut.debug) {
-    console.log('%ccodenut : "{{comp}}" initialize', 'color:#133783');
-  }
+    })
+  });
 
-})(jQuery, Codenut);
+})(Codenut);

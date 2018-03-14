@@ -1,3 +1,4 @@
-<article data-codenut="{{comp}}">
-  <slot></slot>
+{% macro create(props, attribs) %}
+<article data-codenut="{{comp}}" {{arrtibs(attribs)}}>
 </article>
+{% endmacro %}
