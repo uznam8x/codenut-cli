@@ -1,6 +1,6 @@
 {
   "name": "codenut-cli",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "codenut cli(command line interface)",
   "main": "index.js",
   "bin": {
